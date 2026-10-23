@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">amazon<span>.in</span></a>
+
+    <div class="delivery">
+      <small>Deliver to</small>
+      <strong>India</strong>
+    </div>
+
+    <form class="search" action="products.html">
+      <input type="search" name="q" placeholder="Search Amazon products">
+      <button aria-label="Search">🔍</button>
+    </form>
+
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="cart.html" class="nav-link">🛒 Cart (<span class="cart-count">0</span>)</a>
+  </header>
+
+  <nav class="subnav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Continue Shopping</a>
+  </nav>
+
+  <main class="section">
+    <h1>Your Shopping Cart</h1>
+
+    <div class="cart-layout">
+      <div id="cart-items" class="cart-items"></div>
+
+      <aside class="cart-summary">
+        <h2>Order Summary</h2>
+        <p>Items total: <strong id="cart-subtotal">₹0</strong></p>
+        <p>Delivery: <strong id="delivery-cost">₹0</strong></p>
+        <hr>
+        <h3>Total: <span id="cart-total">₹0</span></h3>
+        <button id="checkout-btn" class="primary-btn full-width">
+          Proceed to Buy
+        </button>
+        <p class="muted">Demo checkout — no real payment is processed.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <a href="products.html">Continue Shopping →</a>
+    <p>Demo shopping website for educational purposes.</p>
+  </footer>
+</body>
+</html>
